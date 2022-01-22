@@ -11,3 +11,4 @@ C:\Users\User\source\reposs\reposHW4\hw4\hw4\obj\Debug\netcoreapp3.1\hw4.csproj.
 C:\Users\User\source\reposs\reposHW4\hw4\hw4\obj\Debug\netcoreapp3.1\hw4.dll
 C:\Users\User\source\reposs\reposHW4\hw4\hw4\obj\Debug\netcoreapp3.1\hw4.pdb
 C:\Users\User\source\reposs\reposHW4\hw4\hw4\obj\Debug\netcoreapp3.1\hw4.genruntimeconfig.cache
+C:\Users\User\source\reposs\reposHW4\hw4\hw4\obj\Debug\netcoreapp3.1\hw4.csproj.AssemblyReference.cache

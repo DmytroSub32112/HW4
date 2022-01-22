@@ -2,54 +2,55 @@
 
 namespace HW4
 {
-    class Program
+    public class HW4
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            string? index = Console.ReadLine();
+            string index = Console.ReadLine();
             bool result = int.TryParse(index, out int number);
             if (result == true)
             {
                 Console.WriteLine("Вы ввели число");
             }
+
             if (result == false)
             {
                 Console.WriteLine("Програма не начнет свое выполнение,пока не будет введено число");
             }
+
             Console.WriteLine("-------------------------");
             string str = " abcdefghijklmnopqrstuvwxyz";
             str.Split(' ');
             int length = 0;
             int oddindex = 0;
-            int[] Arr = new int[number];
-            for (int i = 0; i < Arr.Length; i++)
+            int[] arr = new int[number];
+            for (int i = 0; i < arr.Length; i++)
             {
-                Arr[i] = new Random().Next(1, 26);
+                arr[i] = new Random().Next(1, 26);
             }
-            int[] oddArr = new int[Arr.Length];//Эх лишнии ячейки вот если бы можно было бы пользоваться колекциями((
-            int[] honestArr = new int[Arr.Length];
-            foreach (var item in Arr)
+
+            int[] oddArr = new int[arr.Length];
+            int[] honestArr = new int[arr.Length];
+            foreach (var item in arr)
             {
                 Console.WriteLine(item);
             }
+
             Console.WriteLine("-------------------------");
-            for (int i = 0; i < Arr.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
-                if (Arr[i] % 2 == 0)
+                if (arr[i] % 2 == 0)
                 {
-                    honestArr[length] = Arr[i];
+                    honestArr[length] = arr[i];
 
                     length++;
-
-
                 }
                 else
                 {
-                    oddArr[oddindex] = Arr[i];
+                    oddArr[oddindex] = arr[i];
                     oddindex++;
                 }
             }
-
 
             Console.WriteLine("Масив c четными значениями");
             foreach (var item in honestArr)
@@ -62,20 +63,9 @@ namespace HW4
             {
                 Console.WriteLine(item);
             }
+
             Console.WriteLine("Меняем цифры на буквы");
             string strArr1 = "";
-
-            for (int i = 0; i < str.Length; i++)
-            {
-                for (int j = 0; j < honestArr.Length; j++)
-                {
-                    if (str[i] == honestArr[j])
-                    {
-
-                    }
-                }
-
-            }
             foreach (var item in honestArr)
             {
                 for (int i = 0; i < str.Length; i++)
@@ -84,15 +74,16 @@ namespace HW4
                     {
                         strArr1 += str[i];
                         i++;
-
                     }
                 }
             }
+
             Console.WriteLine("четные буквы");
             foreach (var item in strArr1)
             {
                 Console.Write(item);
             }
+
             Console.WriteLine();
             Console.WriteLine("нечетные буквы");
             string strArr2 = "";
@@ -104,14 +95,15 @@ namespace HW4
                     {
                         strArr2 += str[i];
                         i++;
-
                     }
                 }
             }
+
             foreach (var item in strArr2)
             {
                 Console.Write(item);
             }
+
             Console.WriteLine();
             Console.WriteLine("-------------------");
             strArr1 = strArr1.Replace('d', 'D');
@@ -133,48 +125,55 @@ namespace HW4
                 {
                     value1++;
                 }
+
                 if (item.ToString().Contains("H"))
                 {
                     value1++;
                 }
+
                 if (item.ToString().Contains("J"))
                 {
                     value1++;
                 }
             }
+
             foreach (var item in strArr2)
             {
                 if (item.ToString().Contains("A"))
                 {
                     value2++;
                 }
+
                 if (item.ToString().Contains("E"))
                 {
                     value2++;
                 }
+
                 if (item.ToString().Contains("I"))
                 {
                     value2++;
                 }
             }
+
             Console.WriteLine("Выводим масив  с большем количеством символов в верхнем регистре ");
             if (value1 > value2)
             {
                 Console.WriteLine("Четный масив");
                 Console.WriteLine(strArr1);
             }
+
             if (value1 < value2)
             {
                 Console.WriteLine("Нечетный масив");
                 Console.WriteLine(strArr2);
             }
+
             if (value1 == value2)
             {
                 Console.WriteLine("количество символов в верхнем регистре одинаково");
                 Console.WriteLine(strArr1);
                 Console.WriteLine(strArr2);
             }
-
         }
     }
 }

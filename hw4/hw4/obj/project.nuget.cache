@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "iNiaieZV9gpFrKInQEQWreaNpo9X3NtenEJQQER2xKgj4cz8oHTuLLV7Hl+SuQR0nNtpSUnTLx4XWm4oiDe6ag==",
+  "dgSpecHash": "t6r/VXvciGxr1/plZNR/ZRAo8d55YusR0NOMMhbijLnj1HBV1u0NCI/48FQia8bhpjJn3PdL7kONJymtFF/Big==",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\source\\reposs\\reposHW4\\hw4\\hw4\\hw4.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
+  ],
   "logs": []
 }
