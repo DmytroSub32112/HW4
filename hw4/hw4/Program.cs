@@ -20,7 +20,6 @@ namespace HW4
 
             Console.WriteLine("-------------------------");
             string str = " abcdefghijklmnopqrstuvwxyz";
-            str.Split(' ');
             int length = 0;
             int oddindex = 0;
             int[] arr = new int[number];
@@ -121,17 +120,7 @@ namespace HW4
             int value2 = 0;
             foreach (var item in strArr1)
             {
-                if (item.ToString().Contains("D"))
-                {
-                    value1++;
-                }
-
-                if (item.ToString().Contains("H"))
-                {
-                    value1++;
-                }
-
-                if (item.ToString().Contains("J"))
+                if (item.ToString().Contains("D")|| item.ToString().Contains("H")|| item.ToString().Contains("J"))
                 {
                     value1++;
                 }
@@ -139,17 +128,7 @@ namespace HW4
 
             foreach (var item in strArr2)
             {
-                if (item.ToString().Contains("A"))
-                {
-                    value2++;
-                }
-
-                if (item.ToString().Contains("E"))
-                {
-                    value2++;
-                }
-
-                if (item.ToString().Contains("I"))
+                if (item.ToString().Contains("A") || item.ToString().Contains("E") || item.ToString().Contains("I"))
                 {
                     value2++;
                 }
